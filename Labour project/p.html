@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plumber</title>
+  <link rel="stylesheet" href="/CSS FILE/Plumbing.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-group">
+          <div class="logo">
+            <span>UD</span>
+          </div>
+          <h1>UserDirectory</h1>
+          <div id="location" class="location-badge pulse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span id="location-text">Detecting location...</span>
+          </div>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="AboutUs.html">About</a>
+          <a href="#foot">Contact</a>
+        </nav>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!----------------------- Type Pass Secton ----------------->
+  <section class="hire-section">
+    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Hire Best Employees">
+    <div class="hire-content">
+      <h2>Hire the Best Talent Easily</h2>
+      <p>
+        Find skilled professionals quickly from our verified user base. Whether you're looking for developers,
+        designers, marketers, or technicians — UserDirectory helps you connect with the right talent in your area.
+        Fast, reliable, and secure hiring at your fingertips.
+      </p>
+      <a href="#main-content"><button id="hire-emp">Hire</button></a>
+    </div>
+
+  </section>
+
+  <!-- =============== 1Search Bar ===================-->
+ 
+
+  <div class="search-bar">
+    <label for="search-input">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+        <circle cx="12" cy="9" r="2.5" />
+      </svg>
+      Search by Location
+    </label>
+
+    <input type="text" id="search-input" placeholder="e.g. Delhi, Mumbai, Bhopal" />
+
+  </div>
+  <div class="search-hint">
+    <p class="search-hint">Type your city or area to discover trusted workers near you</p>
+  </div>
+
+
+
+
+
+
+  <!--================ Main Content ================-->
+  <div id="main-content">
+    <main class="container main-content" id="main">
+      <div id="search-results" class="user-grid">
+        <p class="no-users">Loading user data...</p>
+      </div>
+    </main>
+  </div>
+
+
+  </div>
+  <!--=============== Count Section ================= -->
+  <section class="worker-count-section">
+    <div class="worker-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Workers Icon">
+    </div>
+    <div class="worker-text">
+      <h2>Thousands of Workers Trust Us</h2>
+      <p>Join a fast-growing community of reliable and skilled workers ready to serve across the country.</p>
+      <div id="worker-count">0+</div>
+      <div class="worker-label">Plumbers</div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- ============ Footer Section ==================-->
+
+
+<footer>
+  <div class="footer-container" id="foot">
+
+    <div class="footer-top">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="AboutUs.html">About</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="AboutUs.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section footer-contact">
+        <h4>Contact Us</h4>
+        <p>📍 123 Main Street, Delhi, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ info@userdirectory.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"> Facebook</a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Instagram"> Instagram</a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter"> Twitter</a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="LinkedIn"> LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-suggestion">
+      <h4>Suggestions & Complaints</h4>
+      <p>Have a suggestion or facing an issue?</p>
+      <p><a href="mailto:support@userdirectory.com">Email us here</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 UserDirectory. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+  <!--================ JavaScript Files Start  =================-->
+  <script src="/JS FILES/Plumbing.js"></script>
+  <script>
+    const searchInput = document.getElementById("search-input");
+    const searchResults = document.getElementById("search-results");
+
+    function renderUsers(users) {
+      if (!users || users.length === 0) {
+        searchResults.innerHTML = '<p class="no-users">No users found</p>';
+        return;
+      }
+      const html = users
+        .map(
+          (user) => `
+                <div class="user-card">
+                    <div class="user-image">
+                        <img src="${user.image}" alt="${user.name}">
+                    </div>
+                    <div class="p-6">
+                        <h3>${user.name}</h3>
+                        <p><strong>Location:</strong> ${user.area}, ${user.city}</p>
+                        <p><strong>Phone:</strong> ${user.phone}</p>
+                        <p><strong>Occupation:</strong> ${user.Occupation}</p>
+                        
+                        <button class="contact-btn">Contact</button>
+                    </div>
+                </div>
+            `
+        )
+        .join("");
+      searchResults.innerHTML = html;
+    }
+
+    searchInput.addEventListener("input", (e) => {
+      const value = e.target.value.toLowerCase();
+      const filtered = allUsers.filter(
+        (user) =>
+          user.area.toLowerCase().includes(value) ||
+          user.city.toLowerCase().includes(value)
+      );
+      renderUsers(filtered);
+    });
+
+    // ============== Loaction Part =====================
+
+    function detectUserLocation() {
+      const locationTextElement = document.getElementById("location-text");
+      const locationBadgeElement = document.getElementById("location");
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            resolveCoordinates(
+              position.coords.latitude,
+              position.coords.longitude,
+              locationTextElement,
+              locationBadgeElement
+            );
+          },
+          (err) => {
+            console.error("Location error:", err);
+            locationTextElement.textContent = "Location not available";
+            locationBadgeElement.classList.remove("pulse");
+          }
+        );
+      } else {
+        locationTextElement.textContent = "Geolocation not supported";
+        locationBadgeElement.classList.remove("pulse");
+      }
+    }
+
+    async function resolveCoordinates(lat, lon, locationTextElement, locationBadgeElement) {
+      try {
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`
+        );
+        const data = await res.json();
+        const address = data.address;
+
+        // Area fallback
+        const area =
+          address.suburb ||
+          address.neighbourhood ||
+          address.village ||
+          address.road ||
+          address.hamlet ||
+          "";
+
+        // City fallback (broad coverage)
+        const city =
+          address.city ||
+          address.town ||
+          address.village ||
+          address.county ||
+          address.state_district ||
+          address.state ||
+          "";
+
+        const display = (area && city)
+          ? `${area}, ${city}`
+          : (area || city || "Location unavailable");
+
+        locationTextElement.textContent = display;
+        locationBadgeElement.classList.remove("pulse");
+        locationBadgeElement.classList.add("bg-green-100", "text-green-800");
+      } catch (error) {
+        console.error("Reverse geocoding failed:", error);
+        locationTextElement.textContent = "Unknown location";
+        locationBadgeElement.classList.remove("pulse");
+      }
+    }
+
+    // Call it when DOM is loaded
+    document.addEventListener("DOMContentLoaded", detectUserLocation);
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+
+      const workerCountElement = document.getElementById("worker-count");
+      const targetCount = 500; // Set your target number
+      const speed = 50; // Delay between updates (ms)
+      const step = Math.ceil(targetCount / 150); // Adjust for smoothness
+
+      function startCounter() {
+        let currentCount = 0;
+
+        const interval = setInterval(() => {
+          currentCount += step;
+          if (currentCount >= targetCount) {
+            currentCount = targetCount;
+            workerCountElement.textContent = currentCount.toLocaleString() + "+";
+
+            // Delay, then restart
+            clearInterval(interval);
+            setTimeout(startCounter, 2000); // 2 second pause before restarting
+          } else {
+            workerCountElement.textContent = currentCount.toLocaleString() + "+";
+          }
+        }, speed);
+      }
+
+      startCounter();
+
+      renderUsers(allUsers);
+      detectUserLocation();
+    });
+
+
+    // ========= Second search bar ============
+    // Contact Panel Elements
+    const contactPanel = document.getElementById("contact-panel");
+    const contactDetails = document.getElementById("contact-details");
+    const closeContactBtn = document.getElementById("close-contact-panel");
+
+    // Show contact panel with user details
+    function showContactDetails(user) {
+      contactDetails.innerHTML = `
+    <h3>${user.name}</h3>
+    <p><strong>Location:</strong> ${user.area}, ${user.city}</p>
+    <p><strong>Phone:</strong> ${user.phone}</p>
+    <img src="${user.image}" alt="${user.name}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin-top: 10px;">
+  `;
+      contactPanel.classList.remove("hidden");
+    }
+
+    // Close button event
+    closeContactBtn.addEventListener("click", () => {
+      contactPanel.classList.add("hidden");
+    });
+
+
+
+  </script>
+</body>
+
+</html>

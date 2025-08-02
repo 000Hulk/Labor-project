@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Us</title>
+
+    <link rel="stylesheet" href="/CSS FILE/AboutUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="/Media file/l2.png">
+</head>
+
+<body>
+
+
+
+    <header id="home">
+        <div class="container header-content">
+            <!-- Hamburger First -->
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <!-- Then Logo -->
+            <div class="logo">
+                <div class="logo-icon"> <img src="/Media file/l2.png" alt="Go Nearby Logo" width="40"></div>
+                <div class="company-name">GoNearby</div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <!-- <li><a href="#home" class="nav-link">Home</a></li> -->
+                    <li><a href="/HTML FILE/index.html" class="nav-link">Home</a></li>
+                    <li><a href="#service" class="nav-link">Services</a></li>
+                    <li><a href="#Contact" class="nav-link">Contact</a></li>
+                </ul>
+
+            </nav>
+            <button id="search-btn">
+                <a href="index.html#srch">
+                    <h3>Search!</h3>
+                </a>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="scroll-banner" id="user-banner">
+        <div class="scroll-text">
+            ⚠️ Note: Currently, we are serving only specific areas of New Delhi.
+            We apologize for any inconvenience caused. Thank you for your understanding.
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container" id="about">
+        <section class="section about-section">
+            <h2 class="section-title" id="name">About GoNearby</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>GoNearby is a location-based digital platform designed to help individuals instantly find and
+                        connect with nearby workers, professionals, and service providers in their local area. Whether
+                        you're looking for a plumber, electrician, tutor, driver, or daily help—GoNearby makes it quick,
+                        easy, and reliable.
+
+                        We aim to empower local workers and freelancers by giving them visibility in their neighborhood,
+                        while also offering residents a fast and trusted way to find verified assistance near them</p>
+                    <h2>💡 Our Mission</h2>
+                    <p>To connect people with the right services, right around them—building a strong local economy and
+                        fostering community trust.
+
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/480a1d2b-fa3b-4257-b991-80b64e8b1c44.png"
+                        alt="Group of diverse professionals smiling and collaborating in a modern office environment" />
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== Service ========================= -->
+
+        <!-- Categories Section -->
+        <section id="categories" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" id="service">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Categories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Browse through our most in-demand service categories to find the right skilled worker for your
+                    project.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <!-- Category Cards -->
+                <a href="/HTML FILE/Plumbing.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="plumbing">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cc1ee2ae-59a7-4b59-8031-248b48aae1ed.png"
+                                alt="Plumbing tools icon - wrench and pipe illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Plumbing</h3>
+                        <p class="text-gray-600 text-sm mt-1">Leaks, installations & repairs</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Electic.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="electrical">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9e020ad8-adda-4110-ace5-66901c43d6d8.png"
+                                alt="Electrical tools icon - plug and lightning bolt illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Electrical</h3>
+                        <p class="text-gray-600 text-sm mt-1">Wiring, lighting & repairs</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Carpenter.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="carpentry">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1bb757b-fa10-4f95-8b98-4d4e10e3ce2c.png"
+                                alt="Carpentry tools icon - saw and hammer illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Carpentry</h3>
+                        <p class="text-gray-600 text-sm mt-1">Furniture & home repairs</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Housekeeping.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="cleaning">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fae67a13-aea7-4601-a92a-9c7bd24c1668.png"
+                                alt="Cleaning supplies icon - broom and mop illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Cleaning</h3>
+                        <p class="text-gray-600 text-sm mt-1">Home & office cleaning</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Carpenter.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="painting">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70add48c-bac2-4b1e-a602-015ad007da60.png"
+                                alt="Painting tools icon - paint roller and brush illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Painting</h3>
+                        <p class="text-gray-600 text-sm mt-1">Walls, furniture & decor</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Gardern.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="gardening">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://img.freepik.com/premium-vector/makeup-beauty-logo-vector-design_1151527-12661.jpg"
+                                alt="Gardening tools icon - shovel and plant illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Beauty and MakeUp</h3>
+                        <p class="text-gray-600 text-sm mt-1">MakeUp and Parlour</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Transport.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="it">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/10293/10293154.png"
+                                alt="IT services icon - computer and gear illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Labours</h3>
+                        <p class="text-gray-600 text-sm mt-1">All types of Labours</p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Transport.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center"
+                        data-category="moving">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b525ca3-fec0-42e9-9c9d-7981cc10b9ef.png"
+                                alt="Moving services icon - truck and boxes illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Moving & Transport</h3>
+                        <p class="text-gray-600 text-sm mt-1">Home & office relocation</p>
+                    </div>
+                </a>
+
+
+
+
+                <a href="/HTML FILE/Gardern.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center "
+                        id="one" data-category="gardening">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://img.freepik.com/premium-vector/vector-design-tutor-icon-style_822882-153781.jpg"
+                                alt="Gardening tools icon - shovel and plant illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Home tutor</h3>
+                        <p class="text-gray-600 text-sm mt-1">Learn and Grow </p>
+                    </div>
+                </a>
+
+                <a href="/HTML FILE/Gardern.html">
+                    <div class="category-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 cursor-pointer p-4 text-center "
+                        id="one" data-category="gardening">
+                        <div
+                            class="p-3 bg-indigo-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1286/1286769.png"
+                                alt="Gardening tools icon - shovel and plant illustration" class="w-10 h-10">
+                        </div>
+                        <h3 class="font-semibold text-lg text-gray-800">Repair or Maintenance</h3>
+                        <p class="text-gray-600 text-sm mt-1">A.C Serive and more</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== Count Section ================= -->
+        <section class="worker-count-section">
+            <div class="worker-img">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Workers Icon">
+            </div>
+            <div class="worker-text">
+                <h2>Thousands of Workers Trust Us</h2>
+                <p>Join a fast-growing community of reliable and skilled workers ready to serve across the country.</p>
+                <div id="worker-count">0+</div>
+                <div class="worker-label">Workers</div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="section contact-section" id="Contact">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:info@company.com">info@company.com</a></p>
+                    <p>General inquiries and support</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Monday to Friday, 9AM to 6PM</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Visit Us</h3>
+                    <p>123 Business Street</p>
+                    <p>Tech City, TC 101010</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <footer class="bg-gray-800 text-white w-full h-full py-12 px-4 sm:px-10 lg:px-8">
+
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5f23258f-a62e-4368-bcc6-956f944d28fb.png"
+                                alt="Go Nearby Logo" width="40">
+                            <span class="ml-2 text-xl font-bold">GoNearby</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">
+                            Connecting skilled workers with those who need their services. Fast, reliable, and
+                            trustworthy.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white text-sm">Home</a></li>
+                            <li><a href="#categories" class="text-gray-300 hover:text-white text-sm">Categories</a></li>
+
+                            </li>
+                            <li><a href="#about" class="text-gray-300 hover:text-white text-sm">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Support</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-300 hover:text-white text-sm">FAQs</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white text-sm">Contact Us</a></li>
+                            <li><a href="#terms" class="text-gray-300 hover:text-white text-sm">Privacy Policy</a></li>
+                            <li><a href="#terms" class="text-gray-300 hover:text-white text-sm">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Terms & Policy Section -->
+
+                <div class="terms-container" id="terms">
+                    <h2>Terms & Privacy Policy</h2>
+                    <p>
+                        By using our platform, you agree to our terms of service, which ensure a fair, respectful, and
+                        secure
+                        experience for everyone.
+                        We expect users to provide accurate information, avoid misuse, and follow all local laws.
+                    </p>
+                    <p>
+                        Your privacy is important to us. We only collect the necessary information to provide our
+                        services
+                        effectively.
+                        This includes location, contact details, and usage data — all stored securely and never shared
+                        without your
+                        consent.
+                    </p>
+                    <p>
+                        Please note that <strong>GoNearby is not responsible for any misconduct, disputes, or legal
+                            issues that
+                            arise between users and the workers (plumbers, electricians, painters, etc.) listed on our
+                            platform.</strong>
+                        We do not employ or control any of the service providers listed. Our role is limited to
+                        displaying publicly
+                        available or submitted worker data to help you find nearby professionals based on your location.
+                    </p>
+                    <p>
+                        It is the user's responsibility to verify and validate any individual before engaging in any
+                        professional
+                        work. We strongly recommend checking background details and qualifications where applicable
+                        before hiring.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-suggestion">
+                    <h4>Suggestions & Complaints</h4>
+                    <p>Have a suggestion or facing an issue?</p>
+                    <p><a href="mailto:shlgupta27@gmail.com">Email us here</a></p>
+                </div>
+    </div>
+
+
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <p>© 2023 Go Nearby. All rights reserved.</p>
+    </div>
+    </footer>
+    </section>
+
+    <script>
+
+
+
+
+
+
+        function toggleMenu() {
+            document.getElementById("mainNav").classList.toggle("active");
+        }
+
+
+        // Marquee tag Js
+        setTimeout(() => {
+            const banner = document.getElementById("user-banner");
+            banner.style.display = "block";
+
+            // Hide after 5 seconds
+            setTimeout(() => {
+                banner.style.display = "none";
+            }, 10000);
+        }, 5000);
+
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const workerCountElement = document.getElementById("worker-count");
+            const targetCount = 1500; // Set your target number
+            const speed = 50; // Delay between updates (ms)
+            const step = Math.ceil(targetCount / 150); // Adjust for smoothness
+
+            function startCounter() {
+                let currentCount = 0;
+
+                const interval = setInterval(() => {
+                    currentCount += step;
+                    if (currentCount >= targetCount) {
+                        currentCount = targetCount;
+                        workerCountElement.textContent = currentCount.toLocaleString() + "+";
+
+                        // Delay, then restart
+                        clearInterval(interval);
+                        setTimeout(startCounter, 2000); // 2 second pause before restarting
+                    } else {
+                        workerCountElement.textContent = currentCount.toLocaleString() + "+";
+                    }
+                }, speed);
+            }
+
+            // ✅ Call it inside here
+            startCounter();
+        });
+
+    </script>
+
+
+</body>
+
+</html>

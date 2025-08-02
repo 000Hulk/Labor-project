@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Nearby</title>
+  <link rel="stylesheet" href="/CSS FILE/Plumbing.css" />
+  <link rel="icon" type="image/png" href="/Media file/l2.png" />
+  <link rel="stylesheet" href="/CSS FILE/Plumbing.css">
+</head>
+
+<style>
+  /* Only Image Section */
+
+
+  .image-section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .image-section h2 {
+    color: #0077cc;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+
+  }
+
+  .image-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 119, 204, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    text-align: left;
+    /* Align text to the left */
+    margin-top: 10px;
+  }
+
+  .image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 119, 204, 0.2);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .image-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .image-card-content {
+    padding: 15px;
+    /* Add padding for text */
+  }
+
+  .image-card-title {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .image-card-description {
+    font-size: 0.9em;
+    color: #333;
+  }
+
+  #img-2 {
+    height: 250px;
+    width: 300px;
+  }
+
+ #s-btn {
+    width: 90px;
+    padding: 8px;
+    border-radius: 8px;
+    border-color: blue;
+    background-color:#486ec2;
+    color: white;
+    position: absolute;
+    top:40px;
+    right: 20px;
+  }
+  #s-btn:hover{
+    background-color: #1e40af;
+  }
+
+  #s-btn a {
+    text-decoration: none;
+    
+  }
+@media (max-width: 768px) {
+ nav {
+     display: flex;
+     gap: 25px;
+     
+
+}
+#s-btn{
+  position: absolute;
+  top: 85px;
+  right: 15px;
+}
+}
+</style>
+
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-group">
+          <div class="logo"><span><img src="/Media file/l2.png" alt=""
+                style="width: 100px; border-radius: 20%; margin-top: 5px;"></span></div>
+          <!-- <h1>Go Nearby</h1> -->
+          <div id="location" class="location-badge pulse">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span id="location-text">Detecting location...</span>
+          </div>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="AboutUs.html">About US</a>
+          <a href="#f">Contact</a>
+        </nav>
+        
+      </div><a href="#search"><button id="s-btn"><h3>Search</h3></button></a>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hire-section">
+    <img src="/Media file/transport-1.gif" alt="Hire Best Employees" />
+    <div class="hire-content">
+      <h2>Hire the Best Talent Employee Easily</h2>
+      <p>
+        Find skilled professionals quickly from our verified user base. Whether you're looking for developers,
+        designers, marketers, or technicians — GoNearby helps you connect with the right talent in your area.
+        Fast, reliable, and secure hiring at your fingertips.
+      </p>
+      <a href="#search"><button id="hire-emp">Hire</button></a>
+    </div>
+  </section>
+
+  <!-- Search by Area and City -->
+  <section id="search" >
+    <div class="search-bar dual-search">
+      <label for="search-area" class="search-label">🔍 Search Here</label>
+      <div class="search-inputs">
+        <input type="text" id="search-area" placeholder="Enter Area" />
+        <input type="text" id="search-city" placeholder="Enter City" />
+      </div>
+    </div>
+    <div class="search-hint">
+      <p>Type area and city to discover trusted workers near you</p>
+    </div>
+  </section>
+
+
+  <!-- User Cards -->
+  <div id="main-content">
+    <main class="container main-content" id="main">
+      <div id="search-results" class="user-grid">
+        <p class="no-users">Loading user data...</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- image Transport section -->
+
+
+
+  <body>
+    <section class="image-section">
+      <h2>"Choose Reliable Transport, Skilled Workers"</h2>
+      <div class="image-grid">
+        <div class="image-card">
+          <img src="/Media file/transport-4.jpg" alt="Feature 1" id="img-1">
+          <div class="image-card-content">
+            <h3 class="image-card-title">Safe and secure delivery of your valuable goods.</h3>
+
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="/Media file/transport-2.jpg" alt="Feature 2" id="img-2">
+          <div class="image-card-content">
+            <h3 class="image-card-title">Safe and secure delivery of your valuable goods.</h3>
+
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="/Media file/transport-3.png" alt="Feature 3">
+          <div class="image-card-content">
+            <h3 class="image-card-title">Professional packing and unpacking of all items.</h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Count Section -->
+    <section class="worker-count-section">
+      <div class="worker-img">
+        <img src="/Media file/plum2-man.jpg" alt="Workers Icon" />
+      </div>
+      <div class="worker-text">
+        <h2>Thousands of Workers Trust Us</h2>
+        <p>Join a fast-growing community of reliable and skilled workers ready to serve across the country.</p>
+        <div id="worker-count">0+</div>
+        <div class="worker-label">Plumbers</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="f">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About US</a></li>
+              <li><a href="index.html">Services</a></li>
+              <li><a href="AboutUs.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section footer-contact">
+            <h4>Contact Us</h4>
+            <p>📍Palam Colony 2, Delhi, India</p>
+            <p>📞 +91 9696822378</p>
+            <p>✉️ shlgupta27@gmail.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+                Facebook</a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Instagram" />
+                Instagram</a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="Twitter" /> Twitter</a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="LinkedIn" />
+                LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="footer-suggestion">
+          <h4>Suggestions & Complaints</h4>
+          <p>Have a suggestion or facing an issue?</p>
+          <p><a href="mailto:shlgupta27@gmail.com">Email us here</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 GoNearby. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/JS FILES/Plumbing.js"></script>
+    <script>
+      const searchResults = document.getElementById("search-results");
+      const searchArea = document.getElementById("search-area");
+      const searchCity = document.getElementById("search-city");
+
+      function renderUsers(users) {
+        if (!users || users.length === 0) {
+          searchResults.innerHTML = '<p class="no-users">No users found</p>';
+          return;
+        }
+        searchResults.innerHTML = users.map(user => `
+        <div class="user-card">
+          <div class="user-image">
+            <img src="${user.image}" alt="${user.name}">
+          </div>
+          <div class="p-6">
+            <h3>${user.name}</h3>
+            <p><strong>Location:</strong> ${user.area}, ${user.city}</p>
+            <p><strong>Phone:</strong> ${user.phone}</p>
+            <p><strong>Occupation:</strong> ${user.Occupation}</p>
+            <p><strong>Experince:</strong> ${user.Experince}</p>
+            
+          </div>
+        </div>
+      `).join("");
+      }
+
+      function handleSearch() {
+        const areaVal = searchArea.value.toLowerCase().trim();
+        const cityVal = searchCity.value.toLowerCase().trim();
+
+        if (!areaVal && !cityVal) {
+          renderUsers(allUsers.slice(0, 20));
+          return;
+        }
+
+        const filtered = allUsers.filter(user => {
+          const areaMatch = areaVal ? user.area.toLowerCase().includes(areaVal) : true;
+          const cityMatch = cityVal ? user.city.toLowerCase().includes(cityVal) : true;
+          return areaMatch && cityMatch;
+        });
+
+        renderUsers(filtered);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        renderUsers(allUsers.slice(0, 20));
+        detectUserLocation();
+        startCounter();
+
+        searchArea.addEventListener("input", handleSearch);
+        searchCity.addEventListener("input", handleSearch);
+      });
+
+      function detectUserLocation() {
+        const locationTextElement = document.getElementById("location-text");
+        const locationBadgeElement = document.getElementById("location");
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              resolveCoordinates(
+                position.coords.latitude,
+                position.coords.longitude,
+                locationTextElement,
+                locationBadgeElement
+              );
+            },
+            (err) => {
+              console.error("Location error:", err);
+              locationTextElement.textContent = "Location not available";
+              locationBadgeElement.classList.remove("pulse");
+            }
+          );
+        } else {
+          locationTextElement.textContent = "Geolocation not supported";
+          locationBadgeElement.classList.remove("pulse");
+        }
+      }
+
+      async function resolveCoordinates(lat, lon, locationTextElement, locationBadgeElement) {
+        try {
+          const res = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`
+          );
+          const data = await res.json();
+          const address = data.address;
+          const area = address.suburb || address.neighbourhood || address.village || address.road || address.hamlet || "";
+          const city = address.city || address.town || address.village || address.county || address.state_district || address.state || "";
+          const display = (area && city) ? `${area}, ${city}` : (area || city || "Location unavailable");
+          locationTextElement.textContent = display;
+          locationBadgeElement.classList.remove("pulse");
+        } catch (error) {
+          console.error("Reverse geocoding failed:", error);
+          locationTextElement.textContent = "Unknown location";
+          locationBadgeElement.classList.remove("pulse");
+        }
+      }
+
+      function startCounter() {
+        const workerCountElement = document.getElementById("worker-count");
+        const targetCount = 500;
+        const speed = 50;
+        const step = Math.ceil(targetCount / 150);
+        let currentCount = 0;
+        const interval = setInterval(() => {
+          currentCount += step;
+          if (currentCount >= targetCount) {
+            currentCount = targetCount;
+            workerCountElement.textContent = currentCount.toLocaleString() + "+";
+            clearInterval(interval);
+            setTimeout(startCounter, 2000);
+          } else {
+            workerCountElement.textContent = currentCount.toLocaleString() + "+";
+          }
+        }, speed);
+      }
+    </script>
+  </body>
+
+</html>
